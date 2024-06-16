@@ -1,5 +1,5 @@
 import Header from './components/Header/Header.jsx';
-import StarCraftFactions from './components/StarCraftFactions/StarCraftFactions.jsx';
+import Coraje from './components/MyPerfil/Coraje.jsx';
 import { FACTIONS_DATA } from './data.js';
 
 function App() {
@@ -9,27 +9,25 @@ function App() {
       <Header />
 
       <main>
-
-        <h2>Time to get Started!</h2>
           
           <section id="core-concepts">
 
-            <h2>Facciones de StarCraft</h2>
+            <h2>Lista de videojuegos</h2>
             
             <ul>
-              <StarCraftFactions 
+              <Coraje 
               {... FACTIONS_DATA[0]}
               />
 
-              <StarCraftFactions 
+              <Coraje
               {... FACTIONS_DATA[1]}
               />
 
-              <StarCraftFactions 
+              <Coraje
               {... FACTIONS_DATA[2]}
               />
 
-              <StarCraftFactions 
+              <Coraje
               image={FACTIONS_DATA[3].image}
               title={FACTIONS_DATA[3].title}
               description={FACTIONS_DATA[3].description}
